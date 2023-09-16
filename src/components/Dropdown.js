@@ -25,16 +25,16 @@ const Dropdown = ({ options }) => {
 
   return (
     <div className="dropdown">
-      {/* on mouse hover we set the display of dropdown items as true */}
+      /* on mouse hover we set the display of dropdown items as true */
       <div onMouseEnter={() => setDisplay(true)} className="dropdown-menu">
         <span>Select an option</span>
         <i className="fa-solid fa-caret-down"></i>
       </div>
-      {/* Dropdown items which is displayed only when display is true */}
-      {/* Items are comming from the parent components as props */}
+      /* Dropdown items which is displayed only when display is true */
+      /* Items are comming from the parent components as props */
       {display ? <ul className="menu-items">{menuItems}</ul> : ""}
 
-      {/* For the first time when the user enters the site then selected is black so noting is displayed */}
+      /* For the first time when the user enters the site then selected is black so noting is displayed */
       {selected !== "" ? (
         <h3 className="select-option">Selected Option : {selected}</h3>
       ) : (
