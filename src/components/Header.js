@@ -1,6 +1,6 @@
 import React from "react";
 
-const Dropdown = ({ options }) => {
+const Header = ({ options }) => {
   console.log(options);
   return (
     <div className="header">
@@ -15,4 +15,4 @@ const Dropdown = ({ options }) => {
   );
 };
 
-export default Dropdown;
+export default Header;
